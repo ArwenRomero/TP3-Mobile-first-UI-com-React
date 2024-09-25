@@ -1,0 +1,61 @@
+.container {
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.titulo-h3 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.titulo-h4 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.paragrafo {
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+@media (min-width: 768px) {
+    .titulo-h2 {
+        font-size: 2.2rem;
+    }
+
+    .titulo-h3 {
+        font-size: 2rem;
+    }
+
+    .titulo-h4 {
+        font-size: 1.8rem;
+    }
+
+    .paragrafo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo-h2 {
+        font-size: 2.6rem;
+    }
+
+    .titulo-h3 {
+        font-size: 2.4rem;
+    }
+
+    .titulo-h4 {
+        font-size: 2.2rem;
+    }
+
+    .paragrafo {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,59 @@
+
+.comentarios {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comentario:last-child {
+    border-bottom: none;
+}
+
+.comentario p {
+    margin: 4px 0;
+}
+
+.comentario strong {
+    color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+    .comentarios {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    .comentario {
+        border-bottom: 1px solid #555;
+    }
+
+    .comentario strong {
+        color: #eee;
+    }
+}
+
+@media (max-width: 768px) {
+    .comentarios {
+        padding: 12px;
+    }
+
+    .comentario {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comentarios {
+        padding: 8px;
+    }
+
+    .comentario {
+        padding: 8px;
+    }
+}

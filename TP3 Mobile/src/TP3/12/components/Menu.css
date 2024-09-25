@@ -1,0 +1,95 @@
+.menu {
+    background-color: #97b8f5;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #97b8f5;
+    position: relative;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-itens {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-itens li {
+    margin: 0 15px;
+}
+
+.menu-itens a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-itens a:hover {
+    text-decoration: underline;
+}
+
+
+.menu.light {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu.light .menu-toggle {
+    color: #000;
+}
+
+.menu.light .menu-itens a {
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+    .menu-itens {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #181818;
+        width: 200px;
+        border: 1px solid #3c3c3c;
+        border-top: none;
+        padding: 10px 0;
+    }
+
+    .menu-itens.mostrar {
+        display: flex;
+        
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+    }
+
+    .menu-itens li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-itens li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        font-size: 32px;
+    }
+}

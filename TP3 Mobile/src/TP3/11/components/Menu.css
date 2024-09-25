@@ -1,0 +1,96 @@
+.menu {
+    position: relative;
+    width: 100%;
+    background-color: #005d9b;
+}
+
+.menu-all {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #004b77;
+}
+
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .menu-aberto {
+        display: flex;
+    }
+
+    .menu-all {
+        display: block;
+        text-align: right;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .menu {
+        background-color: #005d9b;
+    }
+
+    .menu-all {
+        color: white;
+    }
+
+    .menu ul {
+        background-color:  #005d9b;
+        color: #333;
+    }
+
+    .menu ul li:hover {
+        background-color: #ddd;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .menu {
+        background-color: #333;
+    }
+
+    .menu-all {
+        color: #ccc;
+    }
+
+    .menu ul {
+        background-color: #444;
+        color: #ccc;
+    }
+
+    .menu ul li:hover {
+        background-color: #555;
+    }
+}

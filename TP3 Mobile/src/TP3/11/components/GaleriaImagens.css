@@ -1,0 +1,22 @@
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagem-produto {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-produto:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

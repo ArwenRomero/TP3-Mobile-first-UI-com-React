@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.app-container {
+    padding: 0;
+  }
+  
+  .cabecalho {
+    background-color: #4474ed;
+  }
+  
+  .toolbar-cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .titulo-cabecalho {
+    font-weight: bold;
+  }
+  
+  .icone-perfil {
+    color: white;
+  }
+  
+  .menu-principal {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .layout-social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .feed-postagens, .relacao-amigos, .sugestoes-amizade {
+    margin: 0;
+  }
+  
+  .card-postagem {
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .acoes-postagem {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } 
+  .relacao-amigos, .sugestoes-amizade {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #4f86f5;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .card-amigo, .card-sugestao-amizade {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-amigo:hover, .card-sugestao-amizade:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (min-width: 768px) {
+    .layout-social {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  .comentarios-postagem {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .expandir {
+    max-height: 500px;
+  }
+  
+  .comentario {
+    background-color: #f0f0f0;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes curtidaAnimacao {
+    0% {
+      transform: scale(1);
+      color: black;
+    }
+    50% {
+      transform: scale(1.5);
+      color: red;
+    }
+    100% {
+      transform: scale(1);
+      color: red;
+    }
+  }
+  
+  @keyframes compartilhamentoAnimacao {
+    0% {
+      transform: scale(1);
+      color: black;
+    }
+    50% {
+      transform: scale(1.5);
+      color: blue;
+    }
+    100% {
+      transform: scale(1);
+      color: blue;
+    }
+  }
+  
+  .animacao-curtida {
+    animation: curtidaAnimacao 0.3s ease forwards;
+  }
+  
+  .animacao-compartilhamento {
+    animation: compartilhamentoAnimacao 0.3s ease forwards;
+  }  
+  

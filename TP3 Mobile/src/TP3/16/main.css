@@ -1,0 +1,115 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.imagem-hotel {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.ponto-turistico, .pontos-selecionados {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ponto-turistico:hover, .pontos-selecionados:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pontos-selecionados ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.pontos-selecionados li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pontos-selecionados li:last-child {
+  border-bottom: none;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="number"] {
+  padding: 8px;
+  margin-left: 10px;
+  width: 60px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  .ponto-turistico, .pontos-selecionados {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .ponto-turistico, .pontos-selecionados {
+    background-color: #333;
+    color: #fff;
+  }
+
+  button {
+    background-color: #007bff;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+}

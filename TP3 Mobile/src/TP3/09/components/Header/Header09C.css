@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7d9ef8;
+    color: white;
+}
+
+header img.logo {
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: whitesmoke;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: white;
+    border-top: 5px solid #9a9999;
+}
+
+.sobre div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.sobre img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.sobre h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3a3a3a;
+}
+
+.sobre p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #636363;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header img.logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .sobre div {
+        margin: 20px 0;
+    }
+
+    .sobre h1 {
+        font-size: 2em;
+    }
+
+    .sobre p {
+        font-size: 1eFm;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header img.logo {
+        height: 60px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .sobre {
+        padding: 20px 5px;
+    }
+
+    .sobre h1 {
+        font-size: 1.8em;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #252525;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}

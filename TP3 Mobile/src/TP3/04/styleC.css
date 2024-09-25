@@ -1,0 +1,86 @@
+.menu-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:  #a5c3d4;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:  #a5c3d4;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.botao-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-itens {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #a5c3d4;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.menu-itens.aberto {
+    max-height: 300px;
+}
+
+.menu-itens ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-itens ul li {
+    margin: 10px 0;
+}
+
+.menu-itens ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-itens ul li a:hover {
+    border: 2px solid #3f7392;
+    background-color: #3f7392;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+    .menu-itens {
+        flex-direction: row;
+        justify-content: space-around;
+        max-height: none;
+    }
+
+    .menu-itens.fechado {
+        max-height: none;
+    }
+
+    .menu-itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu-itens ul li {
+        margin: 0;
+    }
+}
